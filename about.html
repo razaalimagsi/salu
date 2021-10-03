@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        .about-section {
+            width: 100%;
+            height: 100vh;
+            background: #f1f1f1;
+        }
+        
+        .inner-width {
+            max-width: 1000px;
+            overflow: hidden;
+            padding: 0 20px;
+            margin: auto;
+        }
+        
+        .about-section h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .border {
+            width: 150px;
+            height: 3px;
+            background: #10595f;
+            margin: 25px auto;
+        }
+        
+        .about-section-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+        
+        .about-section-col {
+            flex: 50%;
+        }
+        
+        .about {
+            padding-right: 30px;
+        }
+        
+        .about h2 {
+            text-align: justify;
+            padding: 20px 0;
+        }
+        
+        .about .bold {
+            color: #10595f;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .about p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .about .btn {
+            display: inline-block;
+            color: #10595f;
+            text-decoration: none;
+            border: 2px solid #10595f;
+            padding: 8px 40px;
+            margin: 10px 0;
+            transition: 0.4 linear;
+        }
+        
+        .about .btn:hover {
+            color: #fff;
+            background: #10595f;
+        }
+        
+        .about .icons ul li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 30px;
+            padding: 20px 10px;
+        }
+        
+        .about .icons ul li a {
+            color: #10595f;
+        }
+        
+        .image img {
+            width: 500px;
+            height: 420px;
+        }
+        
+        @media screen and (max-width:700px) {
+            .about-section-col {
+                flex: 100%;
+                margin: 10px 0;
+                padding: 0;
+            }
+            .about {
+                text-align: center;
+            }
+            .image img {
+                width: 100%;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <title>About</title>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <div class="inner-width">
+            <h1>ABOUT US</h1>
+            <div class="border"></div>
+
+            <div class="about-section-row">
+
+                <div class="about-section-col">
+                    <div class="about">
+                        <h2>Details</h2>
+                        <br>
+                        <p class="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quam iusto cumque eaque quae perferendis reprehenderit, tempora quas dolorem veniam. At magnam illum aliquam praesentium amet deleniti, vitae velit labore.</p>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam et deleniti hic a? Error, doloribus. Tenetur culpa porro repellendus natus nesciunt ut aliquam inventore, repellat debitis mollitia corporis, maiores enim!</p>
+
+                        <a href="#" class="btn">Read More</a>
+
+                        <div class="icons">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section-col">
+                    <div class="image">
+                        <img src="./assets/img/img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
